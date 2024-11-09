@@ -31,6 +31,9 @@
         },
         {
             "m_Id": "4dab995396a943a1aed39a7fa2525e48"
+        },
+        {
+            "m_Id": "b7cb704a844a4d858354b2032a2c651c"
         }
     ],
     "m_Dropdowns": [],
@@ -299,6 +302,20 @@
             },
             "m_InputSlot": {
                 "m_Node": {
+                    "m_Id": "345e0e430d0d4f5c9cf9a91a8ce94bfe"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "296eeb006e864c278474114b2bdd7674"
+                },
+                "m_SlotId": 2
+            },
+            "m_InputSlot": {
+                "m_Node": {
                     "m_Id": "3beba0b951a54fabb09eb901993f72d2"
                 },
                 "m_SlotId": 1
@@ -428,20 +445,6 @@
                     "m_Id": "3d99d387b52f4df1859c188f3e6983f8"
                 },
                 "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "364c355728b8482e8a42f0033494a520"
-                },
-                "m_SlotId": 2
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "345e0e430d0d4f5c9cf9a91a8ce94bfe"
-                },
-                "m_SlotId": 0
             }
         },
         {
@@ -6037,6 +6040,31 @@
 }
 
 {
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.ShaderKeyword",
+    "m_ObjectId": "b7cb704a844a4d858354b2032a2c651c",
+    "m_Guid": {
+        "m_GuidSerialized": "419e1687-825e-4e35-9a24-06b67812b581"
+    },
+    "m_Name": "Boolean",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Boolean",
+    "m_DefaultReferenceName": "_BOOLEAN",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_KeywordType": 0,
+    "m_KeywordDefinition": 0,
+    "m_KeywordScope": 0,
+    "m_KeywordStages": 63,
+    "m_Entries": [],
+    "m_Value": 0,
+    "m_IsEditable": true
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "b8e325dff3a04dafa1140ebf67f3f685",
@@ -6116,6 +6144,9 @@
         },
         {
             "m_Id": "4dab995396a943a1aed39a7fa2525e48"
+        },
+        {
+            "m_Id": "b7cb704a844a4d858354b2032a2c651c"
         }
     ]
 }
