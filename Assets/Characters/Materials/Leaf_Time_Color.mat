@@ -23,6 +23,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseColorTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -59,7 +63,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Texture0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _TopTexture0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -77,8 +89,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AddLightCutoff: 0
+    - _AddLightFalloffAmount: 0.9544675
     - _AddPrecomputedVelocity: 1
+    - _AlphaClip: 0.158
     - _AlphaCutoff: 0.5
+    - _AmbientStrenght: 0.05
+    - _AmbientStrenght1: 0.05
     - _Ambient_Strenght: 0.5
     - _BOOLEAN: 0
     - _BUILTIN_QueueControl: 0
@@ -86,15 +103,22 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _Dissolve: -51.7
+    - _Dissolve: 0
     - _DstBlend: 0
-    - _FalloffAmount: 0.05
+    - _FalloffAmount: 0.7
+    - _FalloffAmount1: 0.7
+    - _FalloffTerminatorAmount: 0.2
     - _Falloff_Amount: 0
+    - _Float2: 0.2
+    - _Float3: 0.2
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _LightingCuttoff: 0.3
+    - _LightingCuttoff: 0
+    - _LightingCuttoff1: 1
     - _Lighting_Cutoff: 0
+    - _MainFalloffAmount: 0.7
+    - _MainLightCuttoff: 0
     - _Metallic: 0
     - _Mode: 0
     - _Noise_Size: 500
@@ -103,18 +127,26 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _ShadowAmbientStrenght: 0.05
     - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
+    - _SpecCutoff: 0.1558722
+    - _SpecFalloff: 0.5189083
+    - _SpecPower: 31.57
+    - _SpecStrength: 0.2
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _TerminatorCuttoff: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+    - _BaseColor: {r: 0.6117647, g: 0.14117648, b: 0.25882354, a: 0}
     - _Color: {r: 0.6117647, g: 0.14117648, b: 0.25882354, a: 1}
-    - _Color0: {r: 0.8705882, g: 0.09803919, b: 0.8098519, a: 0}
+    - _Color0: {r: 0.6117647, g: 0.14117648, b: 0.25882354, a: 0}
     - _Color_1: {r: 0.44025147, g: 0.0678374, b: 0.16094092, a: 1}
     - _Diffuse_Color: {r: 0.8566037, g: 0.13414726, b: 0.6225021, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 0}
     - _Specular_Color: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
