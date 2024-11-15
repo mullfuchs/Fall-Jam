@@ -6,6 +6,8 @@ public class PlayerDialogTrigger : MonoBehaviour
     private bool CanStartDialog = false;
     private Yarn.Unity.DialogueRunner dialog_runner;
     private Yarn.Unity.LineView line_view;
+    private string currentTag;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,7 +29,26 @@ public class PlayerDialogTrigger : MonoBehaviour
             {
                 if(dialog_runner != null)
                 {
-                    dialog_runner.StartDialogue("Start");
+                    if(currentTag == "Stranger")
+                    {
+                        dialog_runner.StartDialogue("yapperMain");
+                    }
+                    if (currentTag == "NPCTime")
+                    {
+                        dialog_runner.StartDialogue("NPCTime");
+                    }
+                    if (currentTag == "NPCChange")
+                    {
+                        dialog_runner.StartDialogue("NPCChange");
+                    }
+                    if (currentTag == "NPCHarvest")
+                    {
+                        dialog_runner.StartDialogue("NPCHarvest");
+                    }
+                    if (currentTag == "NPCDecay")
+                    {
+                        dialog_runner.StartDialogue("NPCDecay");
+                    }
                 }
 
                 if(line_view != null)
@@ -42,8 +63,9 @@ public class PlayerDialogTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "NPC")
+        if (other.tag == "Stranger" || other.tag == "NPCTime" || other.tag == "NPCChange" || other.tag == "NPCHarvest" || other.tag == "NPCDecay")
         {
+           currentTag = other.tag;
            CanStartDialog = true;
            print("hit npc");
         }
@@ -51,8 +73,9 @@ public class PlayerDialogTrigger : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "NPC")
+        if (other.tag == "Stranger" || other.tag == "NPCTime" || other.tag == "NPCChange" || other.tag == "NPCHarvest" || other.tag == "NPCDecay")
         {
+            currentTag = "nothing";
             CanStartDialog = false;
             print("exited npc");
         }

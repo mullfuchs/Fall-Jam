@@ -6,6 +6,11 @@ TagManager:
   tags:
   - CinemachineTarget
   - NPC
+  - Stranger
+  - NPCHarvest
+  - NPCDecay
+  - NPCChange
+  - NPCTime
   layers:
   - Default
   - TransparentFX
