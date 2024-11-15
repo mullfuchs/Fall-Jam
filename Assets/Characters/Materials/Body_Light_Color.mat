@@ -146,7 +146,7 @@ Material:
     - _SpecCutoff: 0.1558722
     - _SpecFalloff: 0.5189083
     - _SpecPower: 31.57
-    - _SpecStrength: 0.2
+    - _SpecStrength: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _TerminatorCuttoff: 1
