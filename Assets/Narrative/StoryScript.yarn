@@ -1,0 +1,102 @@
+﻿title: StoryScript
+tags:
+---
+<<declare $talkedToDecay = false>>
+<<declare $talkedToTime = false>>
+<<declare $talkedToChange = false>>
+<<declare $talkedToHarvest = false>>
+<<declare $resolvedDecay = false>>
+<<declare $resolvedTime = false>>
+<<declare $resolvedChange = false>>
+<<declare $resolvedHarvest = false>>
+===
+title: yapperMain
+---
+<<if $resolvedDecay == false>>
+	Stranger: I look at the leaves losing their green color and falling to the ground dead. I look at the trees losing the leaves and they look dead. It’s just another reminder that everything is going to be worm food, eventually. It’s no use building a sandcastle if the tide is just going to wear it away, so why do anything at all? 
+	Stranger: When I played piano every day, when I could play every day, it felt like I was never going to lose it. All those years of practice felt like a granite slab, like riding a bike, it wasn’t until The Incident that is.
+	Stranger: After that I didn’t play for a week, and when I sat down to place the same piece that he did every single note was off. Everything felt like it had shifted a little, and I couldn’t play anymore. I wrote it off as nerves but then the next day it was the same, and I just kept thinking and thinking about how he did it better. How he did it perfectly. How every note I made was off and crooked in an unacceptable way. I just kept thinking about how I couldn’t play anymore. I had heard perfection and i couldn’t meet it.
+	Stranger: So then I was like “Whats the point? Why even bother” and so I took another week off, and my playing was even worse. and then I took two weeks off, and I couldn’t even sit down at the piano to play a single note. What was the point? I had fallen behind so much. My granite slab had decayed into a pile of sand. 
+	Stranger: People kept suggesting “Just play something easy to get the cobwebs out” as if that would do anything, it would feel like admitting defeat to play something easier, something more pedestrian, it would reveal how much I had fallen in such a short time. its like I never had skills at all, and by hearing him play that peice perfectly I was suddenly doomed to failure.
+	Stranger: I don't know, what do you think?
+	-> Well, what if you did <<if $talkedToDecay == true>>
+		Stranger: Well if I did that, I'd probably start at the basics again. There were some pieces I haven't played that I'd like to, that are simpler...
+		<<set $resolvedDecay to true>>
+	-> Wow that's too bad
+		Stranger: It's the worst.
+<<else>>
+	Stranger: It's funny how I feel better about relearning the Piano, I had to get over myself a little...
+<<endif>>
+<<if $resolvedChange == false>>
+	Stranger: I think I hate change most of all, the idea that everything you have gets torn away, suddenly and without warning. One day you’re going to be the next master of an art, and the next day you can’t even play anymore. 
+	Stranger: One day you’re young and the entire world is full of possibilities, and the next day you’re old and all those open doors are slammed shut, and there’s just a hallway leading down to oblivion. 
+	Stranger: And worst of all, things just get faster as you get older, time moves on, the young people feel incomprehensible. Things get more expensive, more complicated. I just want to go back to when things seemed like forever. 
+	Stranger: I want to know that something is going to be there, day in day out, so I can build my life around some kind of foundation. But there’s nothing! It’s just a bunch of shifting sands and eroding hills until everything is dust. 
+	-> Well, what if you did <<if $talkedToChange == true>>
+		Stranger: Well if I did that, I'd probably start at the basics again. There were some pieces I haven't played that I'd like to, that are simpler...
+		<<set $resolvedChange to true>>
+	-> Wow that's too bad
+		Stranger: It's the worst.
+<<else>>
+	Stranger: It's funny how I feel better about relearning the Piano, I had to get over myself a little...
+<<endif>>
+<<if $resolvedTime == false>>
+	Stranger: And another thing about time. I just wish I had more of it. I think everybody does. The days get shorter and I feel like I keep getting robbed. I stay up later and later to try and steal it back, but it’s useless. the longer im alive the faster time goes, so it just feels like I have less and less with each passing moment. Worse still, what is to be done? I could start over on my piano, I could learn to do something else with my life, but by the time I’m good at it how much time will be left? I’ll be even older than I am now. So what’s the point? All I have left is going to go away sooner than everything that came before. 
+	Stranger: And even if I did start over, if I did dust off my piano and began again at the start. I’ve lost so much time already. If I had stayed with it, maybe it wouldn’t have been so bad, but now the the amount of ground I have to make up for it is too much. It’s an unbridgable gap. So what’s the point if so much time already passed? I will have even less time now, and it passes so quickly that there’s even less time than before. I can feel the sands of time slipping through my fingers
+	-> Well, what if you did <<if $talkedToTime == true>>
+		Stranger: Well if I did that, I'd probably start at the basics again. There were some pieces I haven't played that I'd like to, that are simpler...
+		<<set $resolvedTime to true>>
+	-> Wow that's too bad
+		Stranger: It's the worst.
+<<else>>
+	Stranger: I feel better about time
+<<endif>>
+<<if $resolvedHarvest == false>>
+	Stranger: I guess I made something for myself, after I left school. It was more of a drop out. I never formally dropped out, I simply stopped going to classes. I stopped doing my daily practice. I sold my piano off. I wanted to find the most boring job in the world, something I didn’t have to be good at, something I could disappear into.
+	Stranger: I’m now the account manager at a 3rd party call center. We call people and ask them to renew their auto insurance, which doesn’t exist, but if they do then they’re in our system, and that’s what I manage. If they call to update their address, or their phone number, that’s me, that’s what i do. 
+	Stranger: For all my years of loyalty, what have i got? what have I harvested? I made my way up to Associate Senior Account Branch Manager. What does that mean? I get a special seat at a weekly steak dinner in a crappy resturant in a crappy minimall, but forget about all that for a second.
+	Stranger: When I walked away from piano academy, it felt like I was taking a seed out of the ground and burying another. I wanted this seed to grow and turn into a house, a stable life, a midsized SUV, and maybe a closet full of suits so I could finally feel like an adult. 
+	Stranger: But now I look at what I planted and it’s just a weak sapling, no matter how much I water the thing it feels so pathetic, like it can’t hold it’s own branches up. What kind of tree was I trying to plant in the first place. 
+	-> Well, what if you did <<if $talkedToHarvest == true>>
+		Stranger: Well if I did that, I'd probably start at the basics again. There were some pieces I haven't played that I'd like to, that are simpler...
+		<<set $resolvedHarvest to true>>
+	-> Wow that's too bad
+		Stranger: It's the worst.
+<<else>>
+	Stranger: HARVESTER
+<<endif>>
+===
+title: NPCDecay
+---
+<<set $talkedToDecay to true>>
+Decay: How do you start over? How do you even get started in the first place? I started doing the minimal amount of work, and I discarded the idea of perfection at first. I started going after the “good enough”, and at first it felt like cheating because it wasn’t an honest effort. 
+Decay: But really this good enough allowed me to get something on the page 
+Decay: Its easy to ignore the decay of things because confronting it is much harder. It feels overwhelming, because it is. 
+===
+title: NPCChange
+---
+<<set $talkedToChange to true>>
+Change: The more things change the more they stay the same, but how do you get over the impermanance of things. If I were to take everything into account and treat it with the once in a lifetime urgency that it deserves I would spend every moment of my life crying my eyes out, or in my bed, or both. Change is terrifying, and inevitable, and I think everyone would prefer things stayed the same, forever.
+Change: Except that’s very boring, and to stagnate is to surrender to decay
+Change: So do you embrace change and never hold onto anything? Becoming a kind of nomad, always discarding everything?
+Change: Who knows anymore, I'm changing into nothing
+===
+title: NPCHarvest
+---
+<<set $talkedToHarvest to true>>
+Harvest: “The best time to plant a tree was 50 years ago, and the second best time is right now” is something I hear a lot. 
+Harvest: and Honestly I always thought the second best time to plant a tree would be 49 years, 11 months, and 29 days ago, and so on from there.
+Harvest: But really the point of that phrase was that you should take action over fretting about lost time. 
+Harvest: At least I think so. I think it’s more important to do something now, even if we won’t see the results for a long time, or ever. 
+Harvest: Fall is a season of change but also of harvest, everything that’s been growing for months is getting collected. 
+Harvest: It feels a little unreal when you’re planting something at first that it’ll amount to anything, but now there’s more than you could ever dream of, and it’s weird to think that it all came from these tiny little seeds.
+Harvest: And of course, there are seeds that don’t take root, that are total duds. But  you have to take that leap in the first place. if you don’t plant anything nothing’s going to grow, and then fall is going to come around and all you’ll have is a pile of dirt.
+===
+title: NPCTime
+---
+<<set $talkedToTime to true>>
+Time: The problem with time is, you always think you have more of it. Then suddenly you don’t. How do you make every moment count when you don’t know how much of it you have left? If everything has an infinite meaning because of how finite it all is, does that make everything meaningless?
+Time: And worse, your perception of time speeds up, so the amount you feel you have gets less and less the longer things go. It’s paralyzing. 
+Time: The way I look at it, when you’re young everything is new, and it stands out, so things just felt longer. The more you get settled into a routine, the less new things happen, and the more time seems to slip away. 
+Time: Well I don't know, I don't have any time left
+===
